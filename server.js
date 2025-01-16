@@ -24,6 +24,7 @@ app.use(cookieParser())
 
 app.use('/', express.static(path.join(__dirname, 'public')))
 
+// Add for deploying on Render
 app.options('*', cors(corsOptions))
 app.options('/auth', cors(corsOptions))
 
